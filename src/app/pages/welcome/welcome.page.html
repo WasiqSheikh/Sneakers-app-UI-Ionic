@@ -1,0 +1,34 @@
+<ion-content class="WelcomeScreen" [fullscreen]="true">
+  <div class="mainDiv ">
+    <div class="p-2">
+      Flex item 1
+    </div>
+    <div class="p-2">
+      Flex item 2
+    </div>
+  </div>
+  <div>
+    <swiper-container #onboarding [modules] = "swiperModules" [pagination]="{clickable: true}"
+        [keyboard]="true" autoplay = "true">
+        @for(screen of onboardingScreens; track $index) {
+          <swiper-slide>
+            <div>
+              <ion-label>
+                <ion-text class="ion-text-center">
+                  {{screen.text}}
+                </ion-text>
+              </ion-label>
+            </div>
+          </swiper-slide>
+        }
+      </swiper-container>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="ion-no-border">
+    <ion-button expand="block" color="tertiary" size="large" [strong]="true" routerLink="/home">
+      <ion-text> Continue </ion-text>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

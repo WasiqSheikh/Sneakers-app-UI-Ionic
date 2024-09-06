@@ -1,3 +1,11 @@
+.homeDivMain {
+  display: flex;
+  //flex-direction: column;
+  //align-items: center;
+  //justify-content: space-between;
+  height: 100vh;
+}
+
 #container {
   text-align: center;
 
@@ -25,3 +33,109 @@
 #container a {
   text-decoration: none;
 }
+
+.welcome-card {
+  --background: var(--ion-color-secondary);
+  box-shadow: none;
+  border-radius: 20px;
+  ion-card-header {
+    ion-card-title {
+      --color: var(--ion-color-secondary-shade);
+      font-weight: 500;
+    }
+    ion-card-subtitle {
+      h1 {
+        margin: 0;
+        font-weight: 900;
+        font-size: xxx-large;
+        color: var(--ion-color-primary-contrast);
+      }
+    }
+  }
+}
+
+ion-card-header {
+  ion-card-title {
+    --color: var(--ion-color-secondary-shade);
+    font-weight: 500;
+  }
+  ion-card-subtitle {
+    h1 {
+      margin: 0;
+      font-weight: 900;
+      font-size: xxx-large;
+      color: var(--ion-color-primary-contrast);
+    }
+  }
+}
+
+.flexDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ion-footer {
+  ion-button {
+    padding-bottom: 1rem;
+    --box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
+    //box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    ion-icon {
+      color: #FFFFFF;
+    }
+    ion-text {
+        text-transform: none;
+        color: #FFFFFF;
+        font-size: 0.9rem;
+    }
+  }
+}
+
+.sneakerCard {
+  height: 19vh;
+  --background: #FFE8E2;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(250, 120, 156, 1) 0px 7px 13px -3px, rgba(250, 120, 156, 1) 0px -5px 0px inset;
+  ion-progress-bar {
+    --background: #FECACF;
+    --buffer-background: red;
+    --progress-background: #FA789C;
+  }
+}
+
+.NintendoCard {
+  height: 19vh;
+  --background: #E8F9D9;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(90, 167, 19, 1) 0px 7px 13px -3px, rgba(90, 167, 19, 1) 0px -5px 0px inset;
+  ion-progress-bar {
+    --background: #C5E5A8;
+    --buffer-background: red;
+    --progress-background: #5AA713;
+  }
+}
+
+.ScootyCard {
+  height: 19vh;
+  --background: #E5F2FF;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(68, 181, 226, 1) 0px 7px 13px -3px, rgba(68, 181, 226, 1) 0px -5px 0px inset;
+  ion-progress-bar {
+    --background: #B7E1F7;
+    --buffer-background: red;
+    --progress-background: #44B5E2;
+  }
+}
+ion-title {
+  color: #000000
+}
+
+
+
+
+.ItemHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

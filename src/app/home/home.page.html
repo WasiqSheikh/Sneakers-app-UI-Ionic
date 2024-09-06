@@ -1,20 +1,94 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <ion-card class="welcome-card">
+    <div class="flexDiv">
+      <div class="p-2">
+        <ion-card-header>
+          <ion-card-title>
+            Your Balance
+          </ion-card-title>
+          <ion-card-subtitle>
+            <h1>$203.62</h1>
+          </ion-card-subtitle>
+        </ion-card-header>
+      </div>
+      <div class="p-2 align-items-center">
+        <ion-thumbnail>
+          <img alt="Silhouette of mountains" src="../../assets/shoes/faceemoji.jpeg" />
+        </ion-thumbnail>
+      </div>
+    </div>
+  </ion-card>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-title style="color: var(--ion-color-primary);">My goals</ion-title>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card class="sneakerCard">
+    <ion-grid>
+        <ion-row>
+          <ion-col size="6" class="d-flex ion-align-self-center ion-justify-content-center" >
+            <div style="height: 10vh;">
+              <ion-img src="../../assets/shoes/image.png" style = "width: 100%; height: 100%">
+              </ion-img>
+            </div>
+          </ion-col>
+          <ion-col size="6">
+            <div class="ItemHeader">
+              <h5 class="m-0">Sneakers</h5>
+              <span style="color: #FA789C; font-size: larger; font-weight: bold; ">62%</span>
+            </div>
+            <ion-progress-bar value="0.62"></ion-progress-bar>
+            <h1 class="m-0">$124/$200</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-card>
+
+  <ion-card class="NintendoCard">
+    <ion-grid>
+        <ion-row>
+          <ion-col size="6" class="d-flex ion-align-self-center ion-justify-content-center" >
+            <div style="height: 10vh;">
+              <ion-img src="../../assets/shoes/Nintendo.jpeg" style = "width: 100%; height: 100%">
+              </ion-img>
+            </div>
+          </ion-col>
+          <ion-col size="6">
+            <div class="ItemHeader">
+              <h5 class="m-0">Nintendo</h5>
+              <span style="color: #5AA713; font-size: larger; font-weight: bold; ">14%</span>
+            </div>
+            <ion-progress-bar value="0.14"></ion-progress-bar>
+            <h1 class="m-0">$217/$350</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-card>
+
+  <ion-card class="ScootyCard">
+    <ion-grid>
+        <ion-row>
+          <ion-col size="6" class="d-flex ion-align-self-center ion-justify-content-center" >
+            <div style="height: 10vh;">
+              <ion-img src="../../assets/shoes/scooty.png" style = "width: 100%; height: 100%">
+              </ion-img>
+            </div>
+          </ion-col>
+          <ion-col size="6">
+            <div class="ItemHeader">
+              <h5 class="m-0">Scooter</h5>
+              <span style="color: #44B5E2; font-size: larger; font-weight: bold; ">75%</span>
+            </div>
+            <ion-progress-bar value="0.75"></ion-progress-bar>
+            <h1 class="m-0">$236/$315</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-card>
+
 </ion-content>
+
+<ion-footer>
+    <ion-button expand="block" color = "primary" size="large">
+      <ion-icon slot="start" name="add-outline"></ion-icon>
+      <ion-text> New Goal </ion-text>
+    </ion-button>
+</ion-footer>
